@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Prediction Result</title>
+    <style>
+        body {
+            background-color: #f1f8f1;
+            text-align: center;
+            padding-top: 80px;
+            font-family: Arial;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 0 10px #aaa;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            color: green;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>🌾 Recommended Crop:</h2>
+        <h1 style="color:green;">{{ crop | capitalize }}</h1>
+        <a href="/">🔙 Try Again</a>
+    </div>
+</body>
+</html>
